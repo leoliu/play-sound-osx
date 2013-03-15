@@ -44,12 +44,9 @@
     (and (or data device)
          (error "DATA and DEVICE arg not supported"))
 
-    (unless (file-name-absolute-p file)
-      (setq file (expand-file-name file data-directory)))
-
     (apply #'start-process "afplay" nil
            "afplay" (append (and volume (list "-v" volume))
-                            (list file)))))
+                            (list (expand-file-name file data-directory))))))
 
 (provide 'play-sound)
 ;;; play-sound.el ends here

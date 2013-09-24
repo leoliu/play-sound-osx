@@ -1,8 +1,9 @@
-;;; play-sound.el --- Play sound files on OSX
+;;; play-sound.el --- play sound files on OSX  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2011, 2012, 2013  Leo Liu
+;; Copyright (C) 2011-2013  Leo Liu
 
 ;; Author: Leo Liu <sdl.web@gmail.com>
+;; Version: 1.0
 ;; Keywords: comm, tools, convenience
 
 ;; This program is free software; you can redistribute it and/or modify
